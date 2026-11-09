@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEAK Solutions | I automate the paperwork your office does by hand</title>
-<meta name="description" content="Workflow automation for small offices: intake forms, e-signature, and document collection set up inside the software you already use. One process, 7 business days, $1,000 flat.">
+<title>SEAK Solutions | I make the software you already pay for do your team's busywork</title>
+<meta name="description" content="AI implementation and workflow automation for small businesses, set up inside the software you already use. One process, 7 business days, $1,000 flat.">
 <meta name="theme-color" content="#F7F6F2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SEAK Solutions">
-<meta property="og:title" content="I automate the paperwork your office does by hand.">
-<meta property="og:description" content="Intake forms, e-signature, and document collection, set up inside the software you already use. $1,000 flat. See the working demo.">
+<meta property="og:title" content="I make the software you already pay for do your team's busywork.">
+<meta property="og:description" content="I make the software you already pay for do your team's busywork. $1,000 flat. See the working demo.">
 <meta property="og:url" content="https://seakconsulting.com/">
 <meta property="og:image" content="https://seakconsulting.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SEAK Solutions: I automate the paperwork your office does by hand. $1,000 flat, with a screenshot of the working demo.">
+<meta property="og:image:alt" content="SEAK Solutions: I make the software you already pay for do your team's busywork. $1,000 flat, with a screenshot of the working demo.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -198,6 +198,12 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
   .btn{width:100%}
 }
 
+/* v6 (11/8): eyebrow, demo intro, end-of-page button */
+.eyebrow{font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin:0 0 14px}
+.demo-intro{max-width:46em;margin:56px 0 22px}
+.demo-intro h2{font-size:clamp(26px,2.6vw,34px)}
+.contact .btn-light{background:#fff;color:var(--green)}
+.contact .btn-light:hover{background:#EEF3F0}
 /* v5 (11/8): content tabs, no JavaScript (radio buttons + labels) */
 .tabs{position:relative;margin:64px 0 0}
 .tabs>input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
@@ -213,7 +219,7 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 .terms li{padding:14px 16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
 .terms b{display:block;color:var(--ink)}
 .tp .ba{max-width:620px}
-@media (max-width:640px){.terms{grid-template-columns:1fr}.tablist{gap:0}.tablist label{flex:1 1 auto;justify-content:center;padding:0 6px;font-size:16px}}
+@media (max-width:640px){h1{font-size:34px;line-height:1.05}.terms{grid-template-columns:1fr}.tablist{gap:0}.tablist label{flex:1 1 auto;justify-content:center;padding:0 6px;font-size:16px}}
 </style>
 </head>
 <body>
@@ -226,18 +232,24 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 
 <main id="main">
 <section class="hero" aria-labelledby="h1">
-  <h1 id="h1">I automate the paperwork your office does by hand.</h1>
+  <p class="eyebrow">AI implementation &amp; workflow automation for small businesses</p>
+  <h1 id="h1">I make the software you already pay for do your team's busywork.</h1>
   <div class="hero-row">
     <div class="sub">
-      <p><b>Example:</b> a new vendor gets one link. They sign, upload their W-9 and insurance, and show up in QuickBooks. Nobody has to chase them with follow-up emails.</p>
-      <p>I set it up in the software you already use. <b>One process, 7 business days, $1,000 flat.</b></p>
+      <p>Onboarding, approvals, renewals, follow-ups, reports. I map how your team does it, cut the extra steps, and set up AI and automation in the software you already use. A person still approves what matters.</p>
+      <p><b>One process, 7 business days, $1,000 flat.</b></p>
     </div>
     <div class="cta-col">
       <a class="btn" href="mailto:cameron@seakinteriors.com?subject=Free%2020-minute%20call">Book a free 20-minute call</a>
-      <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">See the working demo <span aria-hidden="true">&rarr;</span></a>
+      <p class="cta-note">We'll find the process costing you the most hours.</p>
     </div>
   </div>
 
+  <div class="demo-intro">
+    <h2>See it working</h2>
+    <p>A working demo of an AI automation workflow I built for a sample property company. It runs vendor onboarding and purchasing: drafts paperwork, tracks who's waiting on whom, and checks spend against budget, and never sends, signs, or pays without a person. It's built to cut the repeat work that costs a team time and money.</p>
+    <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">Open the working demo <span aria-hidden="true">&rarr;</span></a>
+  </div>
   <figure class="shot">
     <div class="panel">
       <div class="frame">
@@ -245,7 +257,7 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
         <picture><source media="(max-width:640px)" srcset="demo-phone.webp" width="1000" height="618"><img src="demo.webp" width="1640" height="732" alt="The working demo dashboard: vendors and their status, who is waiting on a decision, spend against budget, and nothing sent, signed, or paid without a person."></picture>
       </div>
     </div>
-    <figcaption>Working demo, sample records: a property company onboarding vendors.</figcaption>
+    <figcaption>Working demo with sample records.</figcaption>
   </figure>
 </section>
 </main>
@@ -268,12 +280,11 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
     <h3 class="sub-h">The industry term: workflow automation</h3>
     <p>That means software does the repeat steps for you: no retyping, no chasing.</p>
     <ul class="terms">
-      <li><b>Client and vendor onboarding</b>Setting up someone new, start to finish.</li>
+      <li><b>Client and vendor onboarding</b>Setting up someone new.</li>
       <li><b>Intake forms</b>One link instead of back-and-forth emails.</li>
-      <li><b>E-signature</b>Documents signed online, in the right order.</li>
-      <li><b>Document collection</b>W-9s, insurance, and licenses, with expiration flags.</li>
-      <li><b>Integrations</b>Details land in QuickBooks, AppFolio, or your other software, typed once.</li>
-      <li><b>Status dashboard</b>One page: who's waiting on what.</li>
+      <li><b>E-signature</b>Documents signed online, in order.</li>
+      <li><b>Document collection</b>W-9s, insurance, and licenses. I flag what's missing or expired; I don't certify them.</li>
+      <li><b>Integrations</b>Details land in your other software, typed once.</li>
     </ul>
     <h3 class="sub-h">Who it's for</h3>
     <ol class="who">
@@ -288,7 +299,6 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
       <li><div><h3>Wholesale and distribution</h3></div></li>
       <li><div><h3>Commercial cleaning</h3></div></li>
     </ol>
-    <h3 class="sub-h">One new vendor, before and after</h3>
     <div class="ba">
       <p class="tag">Illustrative example.</p>
       <table>
@@ -315,8 +325,6 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
       <li><span class="d">Days 6&ndash;7</span><h3>Hand it over</h3><p>I train your team, we run the tests together, and my access is closed.</p></li>
     </ol>
     <p class="clock">The clock starts when the scope is signed, the $500 clears, and access is set up.</p>
-    <h3 class="sub-h">What stays in your hands</h3>
-    <p>It's built in your software and stays there. I never ask for your passwords. Money, signatures, and customer decisions stay with your team.</p>
   </div>
 
   <div class="tp" id="p3">
@@ -343,10 +351,8 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
   <div class="tp" id="p4">
     <h2>Questions</h2>
     <div class="faq">
-      <details><summary>My business isn't on the list. Is this for me?</summary><p>Probably, if your office repeats a paperwork process every week.</p></details>
       <details><summary>Can you work in our software?</summary><p>Usually. I check on the free call and won't promise a connection I haven't checked.</p></details>
       <details><summary>Are you using AI? How is our data protected?</summary><p>Yes. An AI coding assistant helps me build, and I review and test its output before delivery. Here's how I protect your data: you give me a named user with least-privilege access and multi-factor authentication (MFA) where your software supports it, and I never ask for or hold your passwords. I develop and test on synthetic data first. Your live records are never sent to an AI model without your written OK, and never used for model training. At the end of the project, my access and API tokens are revoked, and your data is returned or deleted within 30 days of the fix window closing.</p></details>
-      <details><summary>Do you check our documents?</summary><p>The setup flags what's missing or expired for your reviewer. I don't certify insurance, tax, or license status.</p></details>
     </div>
   </div>
 </section>
@@ -354,6 +360,7 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 <section class="contact" id="contact" aria-labelledby="h-contact">
   <h2 id="h-contact">Get in touch</h2>
   <p class="lead">Tell me the process and your software. I'll reply to set up the free call.</p>
+  <p><a class="btn btn-light" href="mailto:cameron@seakinteriors.com?subject=Free%2020-minute%20call">Book a free 20-minute call</a></p>
   <p class="other"><b>Other work:</b> website rebuilds, marketing materials, social media pages like Facebook and Instagram, and more. <a href="mailto:cameron@seakinteriors.com?subject=Other%20work">Inquire about what fits your needs.</a></p>
   <dl class="reach">
     <div><dt>Email</dt><dd><a href="mailto:cameron@seakinteriors.com?subject=Free%2020-minute%20call">cameron@seakinteriors.com</a></dd></div>
