@@ -11,8 +11,8 @@
 <meta property="og:site_name" content="SEAK Solutions">
 <meta property="og:title" content="I fix the paperwork your team repeats every week.">
 <meta property="og:description" content="One paperwork process your business repeats, fixed inside the software you already use. $1,000 fixed. See the working demo.">
-<meta property="og:url" content="https://cameronkratkyy.github.io/seaksolutions-site/">
-<meta property="og:image" content="https://cameronkratkyy.github.io/seaksolutions-site/og.png">
+<meta property="og:url" content="https://seakconsulting.com/">
+<meta property="og:image" content="https://seakconsulting.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="SEAK Solutions: I fix the paperwork your team repeats every week. $1,000 fixed, with a screenshot of the working demo.">
@@ -79,7 +79,7 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 .bar{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line);background:#FBFAF7}
 .bar i{width:10px;height:10px;border-radius:50%;background:#DCD8CF}
 .bar span{margin-left:10px;font-size:16px;color:var(--ink-2)}
-.frame img{width:100%;height:auto;aspect-ratio:1150/698;object-fit:cover;object-position:0 0}
+.frame img{width:100%;height:auto;aspect-ratio:1640/732;object-fit:cover;object-position:0 0}
 .shot figcaption{font-size:16px;color:var(--ink-2);margin:16px 2px 0}
 .notes{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 28px}
 .notes li{font-size:16px;display:flex;gap:10px;align-items:baseline}
@@ -116,7 +116,6 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 
 /* steps */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;position:relative}
-.steps::before{content:"";position:absolute;left:28px;right:28px;top:31px;border-top:2px dashed var(--sage-2)}
 .steps li{position:relative;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:22px 22px 18px}
 .steps .d{display:block;font-size:16px;font-weight:600;color:var(--green);margin:0 0 8px}
 .steps p{margin:0;font-size:17px;color:var(--ink-2)}
@@ -130,7 +129,6 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 .dark .steps li{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.16)}
 .dark .steps p{color:#C9D2CC}
 .dark .steps .d{color:#A9C7B7}
-.dark .steps::before{border-top-color:rgba(255,255,255,.22)}
 
 /* what you get */
 .ticks{list-style:none;margin:0;padding:0}
@@ -187,13 +185,12 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
   .who-wrap .intro{position:static}
   .notes{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .steps::before{display:none}
   .hands{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   .who{grid-template-columns:1fr}
   .steps,.hands{grid-template-columns:1fr}
-  .frame img{aspect-ratio:4/3}
+  .frame img{aspect-ratio:1000/618}
   .sec{padding:64px 0}
   .ba{padding:4px 18px 18px}
   .ba td{font-size:22px}
@@ -226,7 +223,7 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
     <div class="panel">
       <div class="frame">
         <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Working demo</span></div>
-        <img src="demo.webp" width="1150" height="698" alt="The working demo dashboard: vendors and their status, who is waiting on a decision, spend against budget, and nothing sent, signed, or paid without a person.">
+        <picture><source media="(max-width:640px)" srcset="demo-phone.webp" width="1000" height="618"><img src="demo.webp" width="1640" height="732" alt="The working demo dashboard: vendors and their status, who is waiting on a decision, spend against budget, and nothing sent, signed, or paid without a person."></picture>
       </div>
     </div>
     <figcaption>Working demo, sample records: a property company onboarding vendors.</figcaption>
