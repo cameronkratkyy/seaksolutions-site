@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEAK Solutions | I fix the paperwork your team repeats every week</title>
-<meta name="description" content="I fix one paperwork process your business repeats every week, inside the software you already use. Construction, property management, logistics, staffing, insurance, and more. $1,000 fixed.">
+<title>SEAK Solutions | I automate the paperwork your office does by hand</title>
+<meta name="description" content="Workflow automation for small offices: intake forms, e-signature, and document collection set up inside the software you already use. One process, 7 business days, $1,000 flat.">
 <meta name="theme-color" content="#F7F6F2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SEAK Solutions">
-<meta property="og:title" content="I fix the paperwork your team repeats every week.">
-<meta property="og:description" content="One paperwork process your business repeats, fixed inside the software you already use. $1,000 fixed. See the working demo.">
+<meta property="og:title" content="I automate the paperwork your office does by hand.">
+<meta property="og:description" content="Intake forms, e-signature, and document collection, set up inside the software you already use. $1,000 flat. See the working demo.">
 <meta property="og:url" content="https://seakconsulting.com/">
 <meta property="og:image" content="https://seakconsulting.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SEAK Solutions: I fix the paperwork your team repeats every week. $1,000 fixed, with a screenshot of the working demo.">
+<meta property="og:image:alt" content="SEAK Solutions: I automate the paperwork your office does by hand. $1,000 flat, with a screenshot of the working demo.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,6 +197,23 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
   .card .big{font-size:54px}
   .btn{width:100%}
 }
+
+/* v5 (11/8): content tabs, no JavaScript (radio buttons + labels) */
+.tabs{position:relative;margin:64px 0 0}
+.tabs>input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.tablist{display:flex;gap:4px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;margin:0 0 36px}
+.tablist label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;font-weight:600;font-size:17px;color:var(--ink-2);border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tablist label:hover{color:var(--ink)}
+#t1:checked~.tablist label[for=t1],#t2:checked~.tablist label[for=t2],#t3:checked~.tablist label[for=t3],#t4:checked~.tablist label[for=t4]{color:var(--ink);border-bottom-color:var(--green)}
+#t1:focus-visible~.tablist label[for=t1],#t2:focus-visible~.tablist label[for=t2],#t3:focus-visible~.tablist label[for=t3],#t4:focus-visible~.tablist label[for=t4]{outline:3px solid var(--green);outline-offset:2px;border-radius:4px}
+.tp{display:none}
+#t1:checked~#p1,#t2:checked~#p2,#t3:checked~#p3,#t4:checked~#p4{display:block}
+.tp h3.sub-h{font-family:var(--serif);font-size:24px;font-weight:600;margin:40px 0 14px}
+.terms{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px}
+.terms li{padding:14px 16px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.terms b{display:block;color:var(--ink)}
+.tp .ba{max-width:620px}
+@media (max-width:640px){.terms{grid-template-columns:1fr}.tablist{gap:0}.tablist label{flex:1 1 auto;justify-content:center;padding:0 6px;font-size:16px}}
 </style>
 </head>
 <body>
@@ -209,13 +226,15 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 
 <main id="main">
 <section class="hero" aria-labelledby="h1">
-  <h1 id="h1">I fix the paperwork your team repeats every week.</h1>
+  <h1 id="h1">I automate the paperwork your office does by hand.</h1>
   <div class="hero-row">
-    <p class="sub">Pick one process: new clients, new vendors, renewals, job paperwork. I count every step, cut what isn't needed, and set the rest up inside the software you already use. <b>One fixed price: $1,000.</b></p>
+    <div class="sub">
+      <p><b>Example:</b> a new vendor gets one link. They sign, upload their W-9 and insurance, and show up in QuickBooks. Nobody has to chase them with follow-up emails.</p>
+      <p>I set it up in the software you already use. <b>One process, 7 business days, $1,000 flat.</b></p>
+    </div>
     <div class="cta-col">
-      <a class="btn" href="mailto:cameron@seakinteriors.com?subject=Free%20fit%20check">Book a free fit check</a>
-      <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">Try the working demo <span aria-hidden="true">&rarr;</span></a>
-      <p class="cta-note">20 minutes, free. A few sentences by email is enough.</p>
+      <a class="btn" href="mailto:cameron@seakinteriors.com?subject=Free%2020-minute%20call">Book a free 20-minute call</a>
+      <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">See the working demo <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div>
 
@@ -227,11 +246,6 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
       </div>
     </div>
     <figcaption>Working demo, sample records: a property company onboarding vendors.</figcaption>
-    <ul class="notes">
-      <li>Who's waiting on what, at a glance</li>
-      <li>Spend checked against the budget before anyone approves</li>
-      <li>Nothing sent, signed, or paid without a person</li>
-    </ul>
   </figure>
 </section>
 </main>
@@ -239,37 +253,44 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
 </div>
 
 <div class="wrap">
-<section class="sec" aria-labelledby="h-who">
-  <div class="who-wrap">
-  <div class="intro">
-  <span class="idx" aria-hidden="true">01</span>
-  <h2 id="h-who">Who it's for</h2>
-  <p class="lead">If your team chases the same documents and signatures, it fits. A few examples:</p>
+<section class="tabs" aria-label="About the service">
+  <input type="radio" name="tab" id="t1" checked aria-label="What I do">
+  <input type="radio" name="tab" id="t2" aria-label="How it works">
+  <input type="radio" name="tab" id="t3" aria-label="Price">
+  <input type="radio" name="tab" id="t4" aria-label="Questions">
+  <div class="tablist">
+    <label for="t1">What I do</label><label for="t2">How it works</label><label for="t3">Price</label><label for="t4">Questions</label>
   </div>
-  <ol class="who">
-    <li><div><h3>Construction and specialty trades</h3><p>Insurance certificates, W-9s, and lien waivers before each job or payment.</p></div></li>
-    <li><div><h3>Property management</h3><p>Residential, commercial, or HOA: agreements, W-9s, and insurance for new owners and vendors.</p></div></li>
-    <li><div><h3>Freight and logistics</h3><p>Carrier setup: W-9, insurance, operating authority, and expiration dates.</p></div></li>
-    <li><div><h3>Accounting and consulting firms</h3><p>Engagement letters, document requests, and signatures to open a new client.</p></div></li>
-    <li><div><h3>Home services</h3><p>HVAC, plumbing, roofing: a booked job to quote, approval, invoice, and payment.</p></div></li>
-    <li><div><h3>Staffing agencies</h3><p>Certifications, signed client contracts, and timecards for each placement.</p></div></li>
-    <li><div><h3>Manufacturers and job shops</h3><p>An emailed quote request to an approved quote and order, entered once.</p></div></li>
-    <li><div><h3>Insurance agencies</h3><p>Renewal documents, signed applications, and certificates for clients.</p></div></li>
-    <li><div><h3>Wholesale and distribution</h3><p>New accounts: credit application, W-9, resale certificate, and signed terms.</p></div></li>
-    <li><div><h3>Commercial cleaning</h3><p>New buildings: service agreement, insurance certificate, and inspection schedule.</p></div></li>
-  </ol>
-  </div>
-</section>
 
-<section class="sec" aria-labelledby="h-ba">
-  <div class="two">
-    <div>
-      <span class="idx" aria-hidden="true">02</span>
-      <h2 id="h-ba">One new client or vendor, before and after.</h2>
-      <p class="changed"><b>What changes:</b> one welcome packet and one e-sign session instead of five emails, reminders that stop once each item is in, and details entered once.</p>
-    </div>
+  <div class="tp" id="p1">
+    <h2>What I do, in plain words</h2>
+    <p class="lead">Most offices have one job that eats hours each week: chasing signatures, retyping details, sending reminders. I find it, cut the extra steps, and set up the rest to run on its own. Your team gets those hours back.</p>
+    <h3 class="sub-h">The industry term: workflow automation</h3>
+    <p>That means software does the repeat steps for you: no retyping, no chasing.</p>
+    <ul class="terms">
+      <li><b>Client and vendor onboarding</b>Setting up someone new, start to finish.</li>
+      <li><b>Intake forms</b>One link instead of back-and-forth emails.</li>
+      <li><b>E-signature</b>Documents signed online, in the right order.</li>
+      <li><b>Document collection</b>W-9s, insurance, and licenses, with expiration flags.</li>
+      <li><b>Integrations</b>Details land in QuickBooks, AppFolio, or your other software, typed once.</li>
+      <li><b>Status dashboard</b>One page: who's waiting on what.</li>
+    </ul>
+    <h3 class="sub-h">Who it's for</h3>
+    <ol class="who">
+      <li><div><h3>Construction and specialty trades</h3></div></li>
+      <li><div><h3>Property management</h3></div></li>
+      <li><div><h3>Freight and logistics</h3></div></li>
+      <li><div><h3>Accounting and consulting firms</h3></div></li>
+      <li><div><h3>Home services</h3></div></li>
+      <li><div><h3>Staffing agencies</h3></div></li>
+      <li><div><h3>Manufacturers and job shops</h3></div></li>
+      <li><div><h3>Insurance agencies</h3></div></li>
+      <li><div><h3>Wholesale and distribution</h3></div></li>
+      <li><div><h3>Commercial cleaning</h3></div></li>
+    </ol>
+    <h3 class="sub-h">One new vendor, before and after</h3>
     <div class="ba">
-      <p class="tag">Illustrative example. Yours get counted in the free fit check.</p>
+      <p class="tag">Illustrative example.</p>
       <table>
         <caption class="vh">Illustrative numbers for one new client or vendor</caption>
         <thead><tr><th scope="col">Per new client or vendor</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
@@ -281,113 +302,61 @@ h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;marg
         </tbody>
       </table>
     </div>
+    <p class="sign">You work with me, Cameron, start to finish.</p>
   </div>
-</section>
 
-<section class="sec" aria-labelledby="h-hi">
-  <div class="two">
-    <div><span class="idx" aria-hidden="true">03</span>
-      <h2 id="h-hi">Hi, I'm Cameron.</h2></div>
-    <div>
-      <p class="lead" style="margin-bottom:16px">You'll work with me from the first call to the handoff. I work remotely with businesses anywhere in the US and take one client at a time, so you get my full attention.</p>
-      <p>Every project starts with pass/fail tests you approve before you pay.</p>
-      <p class="sign">Cameron Kratky, SEAK Solutions</p>
-    </div>
+  <div class="tp" id="p2">
+    <h2>How it works</h2>
+    <p class="lead">Seven business days and about 2 hours of your team's time. You approve each change before it goes live.</p>
+    <ol class="steps">
+      <li><span class="d">Before you pay &middot; free</span><h3>20-minute call</h3><p>We look at your software and recent cases. You get a written list of what I'll do and the tests that prove it works.</p></li>
+      <li><span class="d">Days 1&ndash;2</span><h3>Map it</h3><p>I count every step in up to 10 recent cases. You approve the plan.</p></li>
+      <li><span class="d">Days 3&ndash;5</span><h3>Build it</h3><p>I set it up in your software and test it, including the messy cases.</p></li>
+      <li><span class="d">Days 6&ndash;7</span><h3>Hand it over</h3><p>I train your team, we run the tests together, and my access is closed.</p></li>
+    </ol>
+    <p class="clock">The clock starts when the scope is signed, the $500 clears, and access is set up.</p>
+    <h3 class="sub-h">What stays in your hands</h3>
+    <p>It's built in your software and stays there. I never ask for your passwords. Money, signatures, and customer decisions stay with your team.</p>
   </div>
-</section>
 
-</div>
-<div class="dark">
-<div class="wrap">
-<section class="sec" id="how" aria-labelledby="h-how">
-  <span class="idx" aria-hidden="true">04</span>
-      <h2 id="h-how">How it works</h2>
-  <p class="lead">Seven business days, three stages, and about 2 hours of your team's time. You approve each change before it goes live.</p>
-  <ol class="steps">
-    <li><span class="d">Before you pay &middot; free</span><h3>Fit check and scope</h3><p>20 minutes on your software plan and a few recent cases. Then a written scope: the process, one target number, and the pass/fail tests. Any software upgrade is your call before you pay.</p></li>
-    <li><span class="d">Days 1&ndash;2</span><h3>Map it</h3><p>I confirm the count from up to 10 of your recent cases. You approve the design.</p></li>
-    <li><span class="d">Days 3&ndash;5</span><h3>Build it</h3><p>I set it up in your software and test it: normal, incomplete, duplicate, and failure cases.</p></li>
-    <li><span class="d">Days 6&ndash;7</span><h3>Hand it over</h3><p>I walk your team through it. We run the tests together, you get written instructions, and my access is closed.</p></li>
-  </ol>
-  <p class="clock"><b>When the clock starts:</b> once the scope is signed, the $500 start payment clears, and access is set up. The target number is measured on your next live cases, not on test runs.</p>
-</section>
-</div>
-</div>
-<div class="wrap">
-
-<section class="sec" aria-labelledby="h-get">
-  <div class="two">
-    <div>
-      <span class="idx" aria-hidden="true">05</span>
-      <h2 id="h-get">What you get</h2>
-      <ul class="ticks">
-        <li>A map of how the process runs today, with the count</li>
-        <li>The fix we agree on, set up in your own software</li>
-        <li>Test results against the written pass/fail tests</li>
-        <li>Written instructions and a walkthrough with your team</li>
-        <li>14 days of fixes after the handoff</li>
-      </ul>
-    </div>
-    <div class="worth">
-      <h3>Is it worth $1,000?</h3>
-      <p>Illustrative estimate: 10 new clients or vendors a month &times; 110 staff minutes saved &asymp; 18 hours of staff time a month, worth about $458 at $25 an hour. On those numbers, the $1,000 equals about 2.2 months of that time.</p>
-      <p>I redo this with your numbers before you pay, and tell you if your volume is too low.</p>
+  <div class="tp" id="p3">
+    <h2>One process. One fixed price.</h2>
+    <div class="price">
+      <div class="card">
+        <p class="big">$1,000</p>
+        <p class="fixed">Fixed, not hourly.</p>
+        <dl>
+          <div><dt>To start, once the scope is signed</dt><dd>$500</dd></div>
+          <div><dt>When the agreed tests pass</dt><dd>$500</dd></div>
+        </dl>
+      </div>
+      <div>
+        <ul class="promise">
+          <li><b>If I can't deliver the agreed scope</b> for reasons within my control, I refund your $500 within 10 business days and roll back my changes.</li>
+          <li><b>No surprise costs.</b> Any added software cost is named before you pay.</li>
+          <li><b>14 days of fixes</b> after the handoff, plus written instructions.</li>
+        </ul>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="sec" aria-labelledby="h-hands">
-  <span class="idx" aria-hidden="true">06</span>
-      <h2 id="h-hands">What stays in your hands</h2>
-  <ul class="hands">
-    <li>It's built in your software and stays there. Nothing depends on my account.</li>
-    <li>I never ask for your passwords. You sign in and approve each connection.</li>
-    <li>Money, bank changes, signatures, and customer decisions stay with a person on your team.</li>
-    <li>Records stay in your systems where possible.</li>
-    <li>I don't rewrite legal documents.</li>
-    <li>Every change can be undone, with a manual fallback and an off switch.</li>
-  </ul>
-</section>
-
-<section class="sec" id="price" aria-labelledby="h-price">
-  <span class="idx" aria-hidden="true">07</span>
-      <h2 id="h-price">One process. One fixed price.</h2>
-  <div class="price">
-    <div class="card">
-      <p class="big">$1,000</p>
-      <p class="fixed">Fixed, not hourly.</p>
-      <dl>
-        <div><dt>To start, once the scope is signed</dt><dd>$500</dd></div>
-        <div><dt>When the agreed tests pass</dt><dd>$500</dd></div>
-      </dl>
+  <div class="tp" id="p4">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details><summary>My business isn't on the list. Is this for me?</summary><p>Probably, if your office repeats a paperwork process every week.</p></details>
+      <details><summary>Can you work in our software?</summary><p>Usually. I check on the free call and won't promise a connection I haven't checked.</p></details>
+      <details><summary>Are you using AI? How is our data protected?</summary><p>Yes. An AI coding assistant helps me build, and I review and test its output before delivery. Here's how I protect your data: you give me a named user with least-privilege access and multi-factor authentication (MFA) where your software supports it, and I never ask for or hold your passwords. I develop and test on synthetic data first. Your live records are never sent to an AI model without your written OK, and never used for model training. At the end of the project, my access and API tokens are revoked, and your data is returned or deleted within 30 days of the fix window closing.</p></details>
+      <details><summary>Do you check our documents?</summary><p>The setup flags what's missing or expired for your reviewer. I don't certify insurance, tax, or license status.</p></details>
     </div>
-    <div>
-      <ul class="promise">
-        <li><b>If I can't deliver the agreed scope</b> for reasons within my control, I refund your $500 within 10 business days and roll back my changes.</li>
-        <li><b>No surprise costs.</b> Any added software cost is named before you pay.</li>
-      </ul>
-      <p class="tally"><b>Not ready to buy?</b> Try a free 5-day tally: your team ticks off each request as it comes in (counts only, no names), and I turn it into a savings estimate.</p>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="faq" aria-labelledby="h-faq">
-  <span class="idx" aria-hidden="true">08</span>
-      <h2 id="h-faq">Questions</h2>
-  <div class="faq">
-    <details><summary>My business isn't on the list. Is this for me?</summary><p>Probably, if your office repeats a paperwork process every week: client intake, collecting documents, signed approvals, follow-ups.</p></details>
-    <details><summary>Can you work in our software?</summary><p>QuickBooks, AppFolio, Buildium, Google Workspace, Microsoft 365, your e-sign tool, or whatever you use: I check your plan, user roles, and features in the free fit check. I won't promise a connection I haven't checked.</p></details>
-    <details><summary>Are you using AI? How is our data protected?</summary><p>Yes. An AI coding assistant helps me build, and I review and test its output before delivery. Here's how I protect your data: you give me a named user with least-privilege access and multi-factor authentication (MFA) where your software supports it, and I never ask for or hold your passwords. I develop and test on synthetic data first. Your live records are never sent to an AI model without your written OK, and never used for model training. At the end of the project, my access and API tokens are revoked, and your data is returned or deleted within 30 days of the fix window closing.</p></details>
-    <details><summary>What do your document &ldquo;checks&rdquo; mean?</summary><p>The setup collects the documents, flags what's missing or expired, and sends exceptions to your reviewer. I don't certify insurance, tax, or license status.</p></details>
   </div>
 </section>
 
 <section class="contact" id="contact" aria-labelledby="h-contact">
   <h2 id="h-contact">Get in touch</h2>
-  <p class="lead">Tell me the process, your software, and how often it comes up. I'll reply to book the free fit check.</p>
+  <p class="lead">Tell me the process and your software. I'll reply to set up the free call.</p>
   <p class="other"><b>Other work:</b> website rebuilds, marketing materials, social media pages like Facebook and Instagram, and more. <a href="mailto:cameron@seakinteriors.com?subject=Other%20work">Inquire about what fits your needs.</a></p>
   <dl class="reach">
-    <div><dt>Email</dt><dd><a href="mailto:cameron@seakinteriors.com?subject=Free%20fit%20check">cameron@seakinteriors.com</a></dd></div>
+    <div><dt>Email</dt><dd><a href="mailto:cameron@seakinteriors.com?subject=Free%2020-minute%20call">cameron@seakinteriors.com</a></dd></div>
     <div><dt>Phone</dt><dd><a href="tel:+13142669752">(314) 266-9752</a></dd></div>
   </dl>
 </section>
