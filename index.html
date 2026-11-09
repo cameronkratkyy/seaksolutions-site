@@ -3,293 +3,325 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEAK Solutions | Less chasing, less retyping: one paperwork process, fixed</title>
-<meta name="description" content="For property managers and small-business owners anywhere in the US. I fix one paperwork process your office repeats, inside the software you already use. $1,000 fixed, 7 business days, one client at a time.">
-<meta name="theme-color" content="#FAF8F3">
+<title>SEAK Solutions | I fix the paperwork your team repeats every week</title>
+<meta name="description" content="I fix one paperwork process your business repeats every week, inside the software you already use. Construction, property management, logistics, staffing, insurance, and more. $1,000 fixed.">
+<meta name="theme-color" content="#F7F6F2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SEAK Solutions">
-<meta property="og:title" content="Less chasing. Less retyping. One paperwork process, fixed.">
-<meta property="og:description" content="For property managers and small-business owners. $1,000 fixed, 7 business days, inside the software you already use. One client at a time.">
-<meta property="og:url" content="https://seaksolutions.com/">
-<meta property="og:image" content="https://seaksolutions.com/og.png">
+<meta property="og:title" content="I fix the paperwork your team repeats every week.">
+<meta property="og:description" content="One paperwork process your business repeats, fixed inside the software you already use. $1,000 fixed. See the working demo.">
+<meta property="og:url" content="https://cameronkratkyy.github.io/seaksolutions-site/">
+<meta property="og:image" content="https://cameronkratkyy.github.io/seaksolutions-site/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SEAK Solutions: less chasing, less retyping, one paperwork process fixed. $1,000 fixed, 7 business days. Example numbers are from a made-up company.">
+<meta property="og:image:alt" content="SEAK Solutions: I fix the paperwork your team repeats every week. $1,000 fixed, with a screenshot of the working demo.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,500&amp;display=swap">
 <style>
 :root{
-  --ivory:#FAF8F3; --white:#FFFFFF; --sage:#E9EFE8; --sage-2:#D5E0D4;
-  --ink:#252A27; --ink-2:#555D58; --line:#E2DED5;
-  --green:#285747; --green-dark:#1E4537; --clay:#AF654C;
+  --bg:#F7F6F2; --white:#FFFFFF; --sage:#E7EEE6; --sage-2:#CFDCCD;
+  --ink:#202824; --ink-2:#4F5853; --line:#E1DDD3;
+  --green:#245B48; --green-dark:#1A4536; --clay:#AF654C;
   --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
   --sans:"Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
 p{margin:0 0 1em}
 a{color:inherit}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:4px}
-.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--ivory);padding:12px 16px;z-index:10}
+img{max-width:100%;display:block}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 16px;z-index:10}
 .skip:focus{left:16px;top:16px}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
-.narrow{max-width:720px}
-h1,h2{font-family:var(--serif);font-weight:600;letter-spacing:-.018em;color:var(--ink)}
-h2{font-size:clamp(30px,3.2vw,40px);line-height:1.15;margin:0 0 18px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+h1,h2{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+h2{font-size:clamp(30px,3.3vw,42px);line-height:1.12;margin:0 0 16px}
 h3{font-size:19px;font-weight:700;line-height:1.35;margin:0 0 6px}
 .muted{color:var(--ink-2)}
-.mark{background:linear-gradient(transparent 62%, rgba(175,101,76,.30) 62%, rgba(175,101,76,.30) 92%, transparent 92%);padding:0 .06em}
+.lead{font-size:clamp(19px,1.45vw,21px);line-height:1.55;color:var(--ink-2);max-width:40em;margin:0 0 30px}
 
 /* buttons + links */
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:12px 26px;background:var(--green);color:#fff;font-weight:600;font-size:18px;line-height:1.2;text-decoration:none;border-radius:10px;border:1px solid var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:12px 26px;background:var(--green);color:#fff;font-weight:600;font-size:18px;line-height:1.2;text-decoration:none;border-radius:8px;border:1px solid var(--green);transition:background .15s}
 .btn:hover{background:var(--green-dark)}
 .btn-sm{min-height:44px;padding:10px 18px;font-size:16px}
-.link{display:inline-flex;align-items:center;min-height:48px;font-weight:600;color:var(--green);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.link{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:600;color:var(--green);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
 .link:hover{text-decoration-thickness:2px}
 
-/* header */
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+/* header: name + one button, no tabs */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
 .wordmark{font-family:var(--serif);font-weight:700;font-size:24px;letter-spacing:-.01em;text-decoration:none;display:inline-flex;align-items:center;min-height:48px}
-.nav{display:flex;gap:4px;margin-left:auto}
-.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:16px;font-weight:500;text-decoration:none;color:var(--ink-2)}
-.nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 
 /* hero */
-.hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(36px,5vw,64px);padding:40px 0 80px;align-items:center}
-.for{display:inline-block;font-size:16px;font-weight:600;color:var(--green);background:var(--sage);border-radius:8px;padding:6px 12px;margin:0 0 22px}
-h1{font-size:clamp(40px,4.6vw,58px);line-height:1.06;margin:0 0 22px}
-.sub{font-size:clamp(19px,1.5vw,21px);line-height:1.55;margin:0 0 22px;max-width:32em}
-.offer{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:17px;font-weight:600}
-.offer li{display:inline-flex;align-items:center}
-.offer li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--clay);margin-right:9px;flex:none}
-.cta-note{font-size:16px;color:var(--ink-2);margin:12px 0 4px;max-width:30em}
+.hero-band{position:relative;background:radial-gradient(1200px 520px at 85% 10%, rgba(36,91,72,.10), transparent 60%),radial-gradient(700px 380px at 0% 100%, rgba(36,91,72,.05), transparent 60%)}
+.hero-band::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(36,91,72,.07) 1px, transparent 1px),linear-gradient(90deg, rgba(36,91,72,.07) 1px, transparent 1px);background-size:32px 32px;-webkit-mask-image:linear-gradient(#000 35%, transparent 95%);mask-image:linear-gradient(#000 35%, transparent 95%)}
+.hero-band>.wrap{position:relative}
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(64px,8vw,104px)}
+h1{font-size:clamp(44px,6.9vw,104px);line-height:.98;letter-spacing:-.035em;margin:0;max-width:16ch}
+.hero-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,5vw,72px);align-items:end;margin:clamp(28px,4vw,44px) 0 clamp(40px,5vw,64px)}
+.sub{font-size:clamp(19px,1.5vw,22px);line-height:1.55;margin:0;max-width:34em}
+.cta-col .btn{width:100%}
+.cta-col .link{margin-top:6px}
+.sub b{color:var(--ink);font-weight:700}
+.cta-note{font-size:16px;color:var(--ink-2);margin:14px 0 0;max-width:30em}
 
-/* example panel */
-.example{background:var(--sage);border-radius:18px;padding:28px 30px 22px;margin:0}
-.example .lbl{font-size:16px;font-weight:700;margin:0 0 2px}
-.example .made{font-size:16px;color:var(--ink-2);margin:0 0 16px}
-.trio{width:100%;border-collapse:collapse}
-.trio th{text-align:left;font-weight:600;font-size:17px;padding:14px 0;border-top:1px solid var(--sage-2);vertical-align:middle}
-.trio td{text-align:right;padding:14px 0 14px 12px;border-top:1px solid var(--sage-2);white-space:nowrap;vertical-align:middle}
-.trio thead th{border-top:0;padding:0 0 8px;font-size:16px;font-weight:600;color:var(--ink-2)}
-.trio thead th.num{text-align:right}
-.trio .was{font-size:22px;color:var(--ink-2);text-decoration:line-through;text-decoration-color:var(--clay);text-decoration-thickness:2px}
-.trio .now{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--green);line-height:1}
-.trio .unit{font-size:16px;font-weight:600;color:var(--green);margin-left:3px}
-.changed{margin:14px 0 4px;padding-top:14px;border-top:1px solid var(--sage-2);font-size:16px;line-height:1.5}
+/* demo screenshot */
+.shot{margin:0}
+.panel{position:relative;background:var(--sage);border-radius:20px;padding:clamp(18px,5vw,64px) clamp(14px,5vw,64px) 0;overflow:hidden}
+.panel::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(36,91,72,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(36,91,72,.08) 1px, transparent 1px);background-size:32px 32px}
+.panel .frame{position:relative;max-width:980px;margin:0 auto;border-radius:12px 12px 0 0;border-bottom:0}
+.frame{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(32,40,36,.06),0 24px 48px -24px rgba(32,40,36,.28)}
+.bar{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line);background:#FBFAF7}
+.bar i{width:10px;height:10px;border-radius:50%;background:#DCD8CF}
+.bar span{margin-left:10px;font-size:16px;color:var(--ink-2)}
+.frame img{width:100%;height:auto;aspect-ratio:1150/698;object-fit:cover;object-position:0 0}
+.shot figcaption{font-size:16px;color:var(--ink-2);margin:16px 2px 0}
+.notes{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 28px}
+.notes li{font-size:16px;display:flex;gap:10px;align-items:baseline}
+.notes li::before{content:"";width:16px;height:2px;background:var(--green);flex:none;transform:translateY(-4px)}
 
 /* sections */
-.sec{padding:72px 0}
-.sec + .sec{border-top:1px solid var(--line)}
-.intro-lead{font-size:clamp(19px,1.5vw,21px);max-width:36em}
+.sec{padding:clamp(64px,8vw,104px) 0;border-top:1px solid var(--line)}
+.idx{display:block;font-size:16px;font-weight:600;letter-spacing:.08em;color:var(--green);margin:0 0 14px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,64px);align-items:start}
 
-/* sound familiar */
-.said{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px;margin:28px 0 24px}
-.said h3{color:var(--green)}
-.said ul{list-style:none;margin:10px 0 0;padding:0}
-.said li{font-family:var(--serif);font-style:italic;font-weight:500;font-size:22px;line-height:1.4;padding:6px 0 6px 18px;border-left:3px solid var(--clay);margin:0 0 14px}
+/* who it's for: numbered rows, not tags */
+.who-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,72px);align-items:start}
+.who-wrap .intro{position:sticky;top:24px}
+.who{list-style:none;margin:0;padding:0}
+.who li{position:relative;padding:18px 0 18px 30px;border-top:1px solid var(--line)}
+.who li::before{content:"";position:absolute;left:0;top:29px;width:14px;height:2px;background:var(--green)}
+.who h3{margin:0;font-size:21px}
+.who p{margin:2px 0 0;color:var(--ink-2);font-size:17px}
 
-/* hi */
-.hi{display:grid;grid-template-columns:minmax(0,1fr);max-width:760px}
-.hi .sign{font-family:var(--serif);font-style:italic;font-size:22px;margin:4px 0 0}
+/* before / after */
+.ba{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:8px 28px 22px}
+.ba table{width:100%;border-collapse:collapse}
+.ba th,.ba td{padding:14px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:500}
+.ba thead th{font-size:16px;color:var(--ink-2);font-weight:600}
+.ba td{width:22%;font-family:var(--serif);font-size:26px;font-weight:600}
+.ba td.now{color:var(--green)}
+.ba td small{font-family:var(--sans);font-size:16px;font-weight:500;color:var(--ink-2);margin-left:4px}
+.ba tbody tr:last-child th,.ba tbody tr:last-child td{border-bottom:0}
+.ba .tag{font-size:16px;font-weight:600;color:var(--green);margin:14px 0 4px}
+.changed{margin:22px 0 0}
 
-/* how */
-.steps{list-style:none;margin:28px 0 30px;padding:0;position:relative}
-.steps li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;padding:0 0 26px;position:relative}
-.steps li::after{content:"";position:absolute;left:27px;top:52px;bottom:4px;width:2px;background:var(--sage-2)}
-.steps li:last-child::after{display:none}
-.steps .dot{width:54px;height:54px;border-radius:50%;background:var(--sage);color:var(--green);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:22px}
-.steps .dot.free{background:var(--white);border:2px dashed var(--sage-2);font-family:var(--sans);font-size:16px}
-.steps h3{margin:12px 0 4px}
-.steps h3 small{font-size:16px;font-weight:600;color:var(--ink-2);margin-left:8px}
-.steps p{margin:0;max-width:40em}
-.part{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px}
-.part p{margin:6px 0 0}
+/* about */
+.sign{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--green);margin:18px 0 0}
 
-/* get */
-.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px 56px;align-items:start}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:28px;top:31px;border-top:2px dashed var(--sage-2)}
+.steps li{position:relative;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:22px 22px 18px}
+.steps .d{display:block;font-size:16px;font-weight:600;color:var(--green);margin:0 0 8px}
+.steps p{margin:0;font-size:17px;color:var(--ink-2)}
+.clock{margin:28px 0 0;max-width:46em}
+.dark{background:var(--ink);color:#fff}
+.dark .sec{border-top:0}
+.dark h2,.dark h3{color:#fff}
+.dark .idx{color:#A9C7B7}
+.dark .lead,.dark .clock{color:#C9D2CC}
+.dark .clock b{color:#fff}
+.dark .steps li{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.16)}
+.dark .steps p{color:#C9D2CC}
+.dark .steps .d{color:#A9C7B7}
+.dark .steps::before{border-top-color:rgba(255,255,255,.22)}
+
+/* what you get */
 .ticks{list-style:none;margin:0;padding:0}
 .ticks li{position:relative;padding:10px 0 10px 32px;border-bottom:1px solid var(--line)}
-.ticks li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:7px;border-left:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(-45deg)}
-.worth{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
-.worth h3{margin-bottom:8px}
-.worth p{margin:0 0 10px}
-.worth p:last-child{margin:0;font-size:16px;color:var(--ink-2)}
+.ticks li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:7px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+.worth{background:var(--sage);border-radius:12px;padding:26px 28px 10px}
 
-/* yours */
-.yours{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 48px;margin:24px 0 0}
-.yours div{padding:12px 0;border-bottom:1px solid var(--line)}
-.yours dt{display:inline;font-weight:700}
-.yours dd{display:inline;margin:0}
+/* stays in your hands */
+.hands{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(28px,4vw,48px)}
+.hands li{padding:16px 0;border-top:1px solid var(--line);font-size:17px}
 
 /* price */
-.price{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px 56px;align-items:start}
-.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px 30px}
-.card .big{font-family:var(--serif);font-size:64px;font-weight:700;line-height:1;margin:0 0 4px}
-.card .fixed{font-weight:600;color:var(--ink-2);margin:0 0 18px}
+.price{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,4vw,56px);align-items:start}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 30px 22px}
+.card .big{font-family:var(--serif);font-size:72px;font-weight:600;line-height:1;margin:0 0 6px;color:var(--green);letter-spacing:-.02em}
+.card .fixed{color:var(--ink-2);margin:0 0 18px}
 .card dl{margin:0}
 .card dl div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
-.card dt{max-width:16em}
-.card dd{margin:0;font-weight:700;font-size:20px;white-space:nowrap}
+.card dt{color:var(--ink-2)}
+.card dd{margin:0;font-weight:700}
 .promise{list-style:none;margin:0 0 18px;padding:0}
-.promise li{padding:10px 0;border-bottom:1px solid var(--line)}
-.tally{background:var(--sage);border-radius:14px;padding:16px 20px;margin:0}
+.promise li{padding:12px 0;border-bottom:1px solid var(--line)}
+.tally{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
 
 /* faq */
-.faq{max-width:780px;margin-top:20px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:60px;padding:14px 0;cursor:pointer;font-weight:600;font-size:19px;line-height:1.4;list-style:none}
+.faq{max-width:820px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:60px;padding:12px 0;font-weight:600;font-size:19px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";flex:none;font-size:28px;font-weight:400;line-height:1;color:var(--green);width:24px;text-align:center}
+.faq summary::after{content:"+";font-size:26px;font-weight:400;color:var(--green);flex:none}
 .faq details[open] summary::after{content:"\2013"}
-.faq summary:hover{color:var(--green)}
-.faq details p{margin:0 0 22px;max-width:42em}
+.faq details p{margin:0 0 18px;color:var(--ink-2);max-width:44em}
 
 /* contact */
-.contact{background:var(--sage);border-radius:22px;padding:clamp(28px,5vw,56px);margin:24px 0 56px}
-.contact h2{margin-bottom:12px}
-.contact .intro-lead{margin-bottom:24px}
-.reach{display:flex;flex-wrap:wrap;gap:12px 48px;margin:0 0 18px}
-.reach dt{font-size:16px;font-weight:600;color:var(--ink-2)}
+.contact{background:var(--green);color:#fff;border-radius:16px;padding:clamp(32px,5vw,56px);margin:84px 0 40px}
+.contact h2{color:#fff}
+.contact .lead{color:#DCE6E0}
+.contact .other{font-size:18px;line-height:1.55;color:#DCE6E0;max-width:40em;margin:-14px 0 26px}
+.contact .other b{color:#fff}
+.contact .other a{padding:12px 0;color:#fff;font-weight:600;text-underline-offset:4px}
+.reach{display:flex;flex-wrap:wrap;gap:12px 40px;margin:0}
+.reach div{display:flex;flex-direction:column}
+.reach dt{font-size:16px;color:#C9D7CF}
 .reach dd{margin:0}
-.reach a{display:inline-flex;align-items:center;min-height:48px;font-family:var(--serif);font-weight:600;font-size:clamp(23px,2.4vw,30px);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;color:var(--green)}
+.reach a{display:inline-flex;align-items:center;min-height:48px;font-size:22px;font-weight:600;color:#fff;text-underline-offset:5px}
 
-/* footer */
-.foot{border-top:1px solid var(--line);padding:16px 0 40px;font-size:16px;color:var(--ink-2)}
-.foot p{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 10px}
+.foot{padding:8px 0 40px;font-size:16px;color:var(--ink-2)}
+.foot p{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:0 0 6px}
 .foot a{display:inline-flex;align-items:center;min-height:44px}
-.foot .also{margin-top:6px;display:block}
 
-@media (max-width:980px){
-  .nav{display:none}
-  .hero{grid-template-columns:minmax(0,1fr);padding:24px 0 56px}
-  .two,.price{grid-template-columns:minmax(0,1fr)}
+@media (max-width:900px){
+  .hero-row,.two,.price,.who-wrap{grid-template-columns:1fr}
+  .who-wrap .intro{position:static}
+  .notes{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+  .hands{grid-template-columns:1fr 1fr}
 }
-@media (max-width:760px){
-  body{font-size:17px}
-  .sec{padding:52px 0}
-  .said,.part,.yours{grid-template-columns:minmax(0,1fr)}
-  .said li{font-size:20px}
-  .example{padding:22px 20px 16px;border-radius:16px}
-  .trio .now{font-size:30px}
-  .hero .btn{width:100%}
-  .offer{flex-direction:column;gap:4px}
-  .steps li{grid-template-columns:46px minmax(0,1fr);gap:14px}
-  .steps .dot{width:44px;height:44px;font-size:19px}
-  .steps li::after{left:22px;top:44px}
-  .steps h3{margin-top:8px}
-  .steps h3 small{display:block;margin:2px 0 0}
+@media (max-width:640px){
+  .who{grid-template-columns:1fr}
+  .steps,.hands{grid-template-columns:1fr}
+  .frame img{aspect-ratio:4/3}
+  .sec{padding:64px 0}
+  .ba{padding:4px 18px 18px}
+  .ba td{font-size:22px}
   .card .big{font-size:54px}
-    .foot p{flex-direction:column;align-items:flex-start}
-  .foot .sep{display:none}
+  .btn{width:100%}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="hero-band">
 <div class="wrap">
 <header class="top">
   <a class="wordmark" href="#main">SEAK Solutions</a>
-  <nav class="nav" aria-label="Sections">
-    <a href="#how">How it works</a>
-    <a href="#price">Price</a>
-    <a href="#faq">Questions</a>
-  </nav>
-  <a class="btn btn-sm" href="#contact">Contact</a>
 </header>
 
 <main id="main">
 <section class="hero" aria-labelledby="h1">
-  <div>
-    <p class="for">For property managers and small-business owners</p>
-    <h1 id="h1">Less <span class="mark">chasing</span>. Less <span class="mark">retyping</span>. One paperwork process, fixed.</h1>
-    <p class="sub">I fix one paperwork process your office repeats, inside the software you already use: new-owner onboarding, client intake, vendor documents, the follow-ups in between.</p>
-    <ul class="offer" aria-label="The offer">
-      <li>$1,000 fixed</li>
-      <li>7 business days</li>
-      <li>You work directly with Cameron</li>
-    </ul>
-    <a class="btn" href="mailto:cameron@seakinteriors.com?subject=What%20I%27m%20chasing">Tell me what you're chasing</a>
-    <p class="cta-note">A few sentences is enough. Opens an email to Cameron. Next: a free 20-minute fit check.</p>
-    <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">See a working demo: vendor paperwork at a made-up property company</a>
+  <h1 id="h1">I fix the paperwork your team repeats every week.</h1>
+  <div class="hero-row">
+    <p class="sub">Pick one process: new clients, new vendors, renewals, job paperwork. I count every step, cut what isn't needed, and set the rest up inside the software you already use. <b>One fixed price: $1,000.</b></p>
+    <div class="cta-col">
+      <a class="btn" href="mailto:cameron@seakinteriors.com?subject=Free%20fit%20check">Book a free fit check</a>
+      <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">Try the working demo <span aria-hidden="true">&rarr;</span></a>
+      <p class="cta-note">20 minutes, free. A few sentences by email is enough.</p>
+    </div>
   </div>
 
-  <figure class="example" aria-labelledby="ex-lbl">
-    <p class="lbl" id="ex-lbl">Example: onboarding a new rental owner</p>
-    <p class="made">Made-up numbers to show the format. Not a client result.</p>
-    <table class="trio">
-      <caption class="vh">Made-up example, per new owner</caption>
-      <thead><tr><th scope="col">Per new owner</th><th scope="col" class="num">Before</th><th scope="col" class="num">After</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">Steps</th><td><span class="was">22</span></td><td><span class="now">12</span></td></tr>
-        <tr><th scope="row">Emails your staff sends</th><td><span class="was">14</span></td><td><span class="now">4</span></td></tr>
-        <tr><th scope="row">Staff time</th><td><span class="was">180</span></td><td><span class="now">70</span><span class="unit">min</span></td></tr>
-        <tr><th scope="row">Days until the owner is live</th><td><span class="was">9</span></td><td><span class="now">4</span></td></tr>
-      </tbody>
-    </table>
-    <p class="changed"><b>What changed:</b> one welcome packet and one e-sign session instead of five emails, and reminders that stop once each item is in.</p>
+  <figure class="shot">
+    <div class="panel">
+      <div class="frame">
+        <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Working demo</span></div>
+        <img src="demo.webp" width="1150" height="698" alt="The working demo dashboard: vendors and their status, who is waiting on a decision, spend against budget, and nothing sent, signed, or paid without a person.">
+      </div>
+    </div>
+    <figcaption>Working demo, sample records: a property company onboarding vendors.</figcaption>
+    <ul class="notes">
+      <li>Who's waiting on what, at a glance</li>
+      <li>Spend checked against the budget before anyone approves</li>
+      <li>Nothing sent, signed, or paid without a person</li>
+    </ul>
   </figure>
 </section>
+</main>
+</div>
+</div>
 
-<section class="sec" aria-labelledby="h-said">
-  <h2 id="h-said">Sound familiar?</h2>
-  <p class="intro-lead muted">Things you may have heard in your own office. Not customer quotes.</p>
-  <div class="said">
+<div class="wrap">
+<section class="sec" aria-labelledby="h-who">
+  <div class="who-wrap">
+  <div class="intro">
+  <span class="idx" aria-hidden="true">01</span>
+  <h2 id="h-who">Who it's for</h2>
+  <p class="lead">If your team chases the same documents and signatures, it fits. A few examples:</p>
+  </div>
+  <ol class="who">
+    <li><div><h3>Construction and specialty trades</h3><p>Insurance certificates, W-9s, and lien waivers before each job or payment.</p></div></li>
+    <li><div><h3>Property management</h3><p>Residential, commercial, or HOA: agreements, W-9s, and insurance for new owners and vendors.</p></div></li>
+    <li><div><h3>Freight and logistics</h3><p>Carrier setup: W-9, insurance, operating authority, and expiration dates.</p></div></li>
+    <li><div><h3>Accounting and consulting firms</h3><p>Engagement letters, document requests, and signatures to open a new client.</p></div></li>
+    <li><div><h3>Home services</h3><p>HVAC, plumbing, roofing: a booked job to quote, approval, invoice, and payment.</p></div></li>
+    <li><div><h3>Staffing agencies</h3><p>Certifications, signed client contracts, and timecards for each placement.</p></div></li>
+    <li><div><h3>Manufacturers and job shops</h3><p>An emailed quote request to an approved quote and order, entered once.</p></div></li>
+    <li><div><h3>Insurance agencies</h3><p>Renewal documents, signed applications, and certificates for clients.</p></div></li>
+    <li><div><h3>Wholesale and distribution</h3><p>New accounts: credit application, W-9, resale certificate, and signed terms.</p></div></li>
+    <li><div><h3>Commercial cleaning</h3><p>New buildings: service agreement, insurance certificate, and inspection schedule.</p></div></li>
+  </ol>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="h-ba">
+  <div class="two">
     <div>
-      <h3>If you manage rentals</h3>
-      <ul>
-        <li>&ldquo;Did the new owner ever send back the W-9?&rdquo;</li>
-        <li>&ldquo;I sent the welcome packet. Then four more emails to get it signed.&rdquo;</li>
-        <li>&ldquo;I typed their details into three places. Which one is right?&rdquo;</li>
-      </ul>
+      <span class="idx" aria-hidden="true">02</span>
+      <h2 id="h-ba">One new client or vendor, before and after.</h2>
+      <p class="changed"><b>What changes:</b> one welcome packet and one e-sign session instead of five emails, reminders that stop once each item is in, and details entered once.</p>
     </div>
-    <div>
-      <h3>If you run another small business</h3>
-      <ul>
-        <li>&ldquo;Can you fill out this form? Yes, the same details you gave us last week.&rdquo;</li>
-        <li>&ldquo;Who has the signed approval?&rdquo;</li>
-        <li>&ldquo;I'll send another reminder.&rdquo;</li>
-      </ul>
+    <div class="ba">
+      <p class="tag">Illustrative example. Yours get counted in the free fit check.</p>
+      <table>
+        <caption class="vh">Illustrative numbers for one new client or vendor</caption>
+        <thead><tr><th scope="col">Per new client or vendor</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Steps</th><td>22</td><td class="now">12</td></tr>
+          <tr><th scope="row">Emails your staff sends</th><td>14</td><td class="now">4</td></tr>
+          <tr><th scope="row">Staff time</th><td>180<small>min</small></td><td class="now">70<small>min</small></td></tr>
+          <tr><th scope="row">Days until they're set up</th><td>9</td><td class="now">4</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <p class="narrow">Owner onboarding is my worked example. The method is the same for any repeating process: count it, cut it, set it up, hand it over.</p>
 </section>
 
 <section class="sec" aria-labelledby="h-hi">
-  <div class="hi">
-    <h2 id="h-hi">Hi, I'm Cameron.</h2>
-    <p class="intro-lead">You'll talk to me from the first call to the handoff. I work remotely with teams anywhere in the US, and I take one client at a time, so you get my full attention.</p>
-    <p>I'm launching this service, and I haven't finished a paid client project yet. So instead of borrowed results, you get a clearly labeled demo and pass/fail tests agreed before you pay.</p>
-    <p class="sign">Cameron Kratky, SEAK Solutions</p>
-  </div>
-</section>
-
-<section class="sec" id="how" aria-labelledby="h-how">
-  <h2 id="h-how">How it works</h2>
-  <p class="intro-lead muted">Seven business days, three stages, about 2 hours of your team's time. You approve each change before it goes live.</p>
-  <ol class="steps">
-    <li><span class="dot free" aria-hidden="true">$0</span><div><h3>Before you pay<small>20 minutes, then a scope</small></h3><p>A free fit check of your software plan and a few recent cases. Then a written scope: the process, one target number, and the pass/fail tests. Any software upgrade is your call before you pay.</p></div></li>
-    <li><span class="dot" aria-hidden="true">1</span><div><h3>Map it<small>Days 1&ndash;2</small></h3><p>I confirm the count from up to 10 of your recent cases. You approve the design.</p></div></li>
-    <li><span class="dot" aria-hidden="true">2</span><div><h3>Build it<small>Days 3&ndash;5</small></h3><p>I set it up in your software and test it: normal, incomplete, duplicate, and failure cases.</p></div></li>
-    <li><span class="dot" aria-hidden="true">3</span><div><h3>Hand it over<small>Days 6&ndash;7</small></h3><p>I walk your team through it. We run the tests together, you get written instructions, and my access is closed.</p></div></li>
-  </ol>
-  <div class="part">
+  <div class="two">
+    <div><span class="idx" aria-hidden="true">03</span>
+      <h2 id="h-hi">Hi, I'm Cameron.</h2></div>
     <div>
-      <h3>When the clock starts</h3>
-      <p>Once the scope is signed, the $500 start payment clears, and access is set up. The target number is measured on your next live cases, not on test runs.</p>
+      <p class="lead" style="margin-bottom:16px">You'll work with me from the first call to the handoff. I work remotely with businesses anywhere in the US and take one client at a time, so you get my full attention.</p>
+      <p>Every project starts with pass/fail tests you approve before you pay.</p>
+      <p class="sign">Cameron Kratky, SEAK Solutions</p>
     </div>
   </div>
 </section>
+
+</div>
+<div class="dark">
+<div class="wrap">
+<section class="sec" id="how" aria-labelledby="h-how">
+  <span class="idx" aria-hidden="true">04</span>
+      <h2 id="h-how">How it works</h2>
+  <p class="lead">Seven business days, three stages, and about 2 hours of your team's time. You approve each change before it goes live.</p>
+  <ol class="steps">
+    <li><span class="d">Before you pay &middot; free</span><h3>Fit check and scope</h3><p>20 minutes on your software plan and a few recent cases. Then a written scope: the process, one target number, and the pass/fail tests. Any software upgrade is your call before you pay.</p></li>
+    <li><span class="d">Days 1&ndash;2</span><h3>Map it</h3><p>I confirm the count from up to 10 of your recent cases. You approve the design.</p></li>
+    <li><span class="d">Days 3&ndash;5</span><h3>Build it</h3><p>I set it up in your software and test it: normal, incomplete, duplicate, and failure cases.</p></li>
+    <li><span class="d">Days 6&ndash;7</span><h3>Hand it over</h3><p>I walk your team through it. We run the tests together, you get written instructions, and my access is closed.</p></li>
+  </ol>
+  <p class="clock"><b>When the clock starts:</b> once the scope is signed, the $500 start payment clears, and access is set up. The target number is measured on your next live cases, not on test runs.</p>
+</section>
+</div>
+</div>
+<div class="wrap">
 
 <section class="sec" aria-labelledby="h-get">
   <div class="two">
     <div>
+      <span class="idx" aria-hidden="true">05</span>
       <h2 id="h-get">What you get</h2>
       <ul class="ticks">
         <li>A map of how the process runs today, with the count</li>
@@ -301,26 +333,28 @@ h1{font-size:clamp(40px,4.6vw,58px);line-height:1.06;margin:0 0 22px}
     </div>
     <div class="worth">
       <h3>Is it worth $1,000?</h3>
-      <p>Using the made-up example: 10 new owners a month &times; 110 staff minutes saved &asymp; 18 hours of staff time a month, worth about $458 at $25 an hour. On those numbers, the $1,000 equals about 2.2 months of that time.</p>
+      <p>Illustrative estimate: 10 new clients or vendors a month &times; 110 staff minutes saved &asymp; 18 hours of staff time a month, worth about $458 at $25 an hour. On those numbers, the $1,000 equals about 2.2 months of that time.</p>
       <p>I redo this with your numbers before you pay, and tell you if your volume is too low.</p>
     </div>
   </div>
 </section>
 
-<section class="sec" aria-labelledby="h-yours">
-  <h2 id="h-yours">Your software, your forms, your call.</h2>
-  <dl class="yours">
-    <div><dt>Your accounts.</dt> <dd>It's built in your software and stays there. Nothing depends on my account.</dd></div>
-    <div><dt>Your passwords.</dt> <dd>I never ask for them. You sign in and approve each connection.</dd></div>
-    <div><dt>Your decisions.</dt> <dd>Money, bank changes, signatures, and tenant or customer decisions stay with a person on your team.</dd></div>
-    <div><dt>Your records.</dt> <dd>They stay in your systems where possible, and I build and test with made-up data first.</dd></div>
-    <div><dt>Your forms.</dt> <dd>I don't rewrite legal documents.</dd></div>
-    <div><dt>A way back.</dt> <dd>Every change can be undone. There's a manual fallback and an off switch.</dd></div>
-  </dl>
+<section class="sec" aria-labelledby="h-hands">
+  <span class="idx" aria-hidden="true">06</span>
+      <h2 id="h-hands">What stays in your hands</h2>
+  <ul class="hands">
+    <li>It's built in your software and stays there. Nothing depends on my account.</li>
+    <li>I never ask for your passwords. You sign in and approve each connection.</li>
+    <li>Money, bank changes, signatures, and customer decisions stay with a person on your team.</li>
+    <li>Records stay in your systems where possible.</li>
+    <li>I don't rewrite legal documents.</li>
+    <li>Every change can be undone, with a manual fallback and an off switch.</li>
+  </ul>
 </section>
 
 <section class="sec" id="price" aria-labelledby="h-price">
-  <h2 id="h-price">One process. One fixed price.</h2>
+  <span class="idx" aria-hidden="true">07</span>
+      <h2 id="h-price">One process. One fixed price.</h2>
   <div class="price">
     <div class="card">
       <p class="big">$1,000</p>
@@ -341,28 +375,28 @@ h1{font-size:clamp(40px,4.6vw,58px);line-height:1.06;margin:0 0 22px}
 </section>
 
 <section class="sec" id="faq" aria-labelledby="h-faq">
-  <h2 id="h-faq">Questions</h2>
+  <span class="idx" aria-hidden="true">08</span>
+      <h2 id="h-faq">Questions</h2>
   <div class="faq">
-    <details><summary>I'm not a property manager. Is this for me?</summary><p>Yes, if your office repeats a paperwork process every week: client intake, collecting documents, signed approvals, follow-ups. Owner onboarding is just my most detailed example.</p></details>
-    <details><summary>Can you work in our software?</summary><p>AppFolio, Buildium, Google, your e-sign tool, or whatever you use: I check your plan, user roles, and features in the free fit check. I won't promise a connection I haven't checked.</p></details>
+    <details><summary>My business isn't on the list. Is this for me?</summary><p>Probably, if your office repeats a paperwork process every week: client intake, collecting documents, signed approvals, follow-ups.</p></details>
+    <details><summary>Can you work in our software?</summary><p>QuickBooks, AppFolio, Buildium, Google Workspace, Microsoft 365, your e-sign tool, or whatever you use: I check your plan, user roles, and features in the free fit check. I won't promise a connection I haven't checked.</p></details>
     <details><summary>Are you using AI? How is our data protected?</summary><p>Yes. An AI coding assistant helps me build, and I review and test its output before delivery. Here's how I protect your data: you give me a named user with least-privilege access and multi-factor authentication (MFA) where your software supports it, and I never ask for or hold your passwords. I develop and test on synthetic data first. Your live records are never sent to an AI model without your written OK, and never used for model training. At the end of the project, my access and API tokens are revoked, and your data is returned or deleted within 30 days of the fix window closing.</p></details>
     <details><summary>What do your document &ldquo;checks&rdquo; mean?</summary><p>The setup collects the documents, flags what's missing or expired, and sends exceptions to your reviewer. I don't certify insurance, tax, or license status.</p></details>
   </div>
 </section>
 
 <section class="contact" id="contact" aria-labelledby="h-contact">
-  <h2 id="h-contact">Tell me what you're chasing.</h2>
-  <p class="intro-lead">A few sentences is enough: which software you use and how often the task comes up. I'll reply to book the free 20-minute fit check.</p>
+  <h2 id="h-contact">Get in touch</h2>
+  <p class="lead">Tell me the process, your software, and how often it comes up. I'll reply to book the free fit check.</p>
+  <p class="other"><b>Other work:</b> website rebuilds, marketing materials, social media pages like Facebook and Instagram, and more. <a href="mailto:cameron@seakinteriors.com?subject=Other%20work">Inquire about what fits your needs.</a></p>
   <dl class="reach">
-    <div><dt>Email</dt><dd><a href="mailto:cameron@seakinteriors.com?subject=What%20I%27m%20chasing">cameron@seakinteriors.com</a></dd></div>
+    <div><dt>Email</dt><dd><a href="mailto:cameron@seakinteriors.com?subject=Free%20fit%20check">cameron@seakinteriors.com</a></dd></div>
     <div><dt>Phone</dt><dd><a href="tel:+13142669752">(314) 266-9752</a></dd></div>
   </dl>
 </section>
-</main>
 
 <footer class="foot">
-  <p><span>SEAK Solutions, LLC &middot; Missouri</span><span class="sep" aria-hidden="true">&middot;</span><a href="mailto:cameron@seakinteriors.com">cameron@seakinteriors.com</a><span class="sep" aria-hidden="true">&middot;</span><a href="tel:+13142669752">(314) 266-9752</a></p>
-  <p class="also">Also from SEAK Solutions: website builds, marketing materials, and Facebook page cleanup.</p>
+  <p><span>SEAK Solutions, LLC &middot; Missouri</span><span aria-hidden="true">&middot;</span><a href="mailto:cameron@seakinteriors.com">cameron@seakinteriors.com</a><span aria-hidden="true">&middot;</span><a href="tel:+13142669752">(314) 266-9752</a></p>
 </footer>
 </div>
 </body>
