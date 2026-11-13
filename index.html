@@ -228,6 +228,16 @@ html.js .count:not(.after) td.now{opacity:0}
 /* contact */
 .contact{margin-top:clamp(72px,9vw,112px);padding:clamp(64px,8vw,104px) 0 clamp(40px,5vw,56px)}
 .contact-in{max-width:760px}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:clamp(40px,6vw,88px);align-items:start}
+.contact-grid .contact-in{grid-column:1;grid-row:1}
+.me{grid-column:2;grid-row:1;position:relative;margin:56px 0 0}
+.me img{display:block;width:100%;max-width:300px;height:auto;aspect-ratio:1;object-fit:cover;border-radius:16px;border:1px solid var(--on-line);box-shadow:0 40px 90px -40px rgba(127,209,168,.3)}
+.ph{position:relative;display:block;max-width:300px}
+.ph::before,.ph::after{content:"";position:absolute;width:22px;height:22px;border:2px solid rgba(127,209,168,.55);pointer-events:none}
+.ph::before{top:-10px;left:-10px;border-right:0;border-bottom:0;border-radius:6px 0 0 0}
+.ph::after{bottom:-10px;right:-10px;border-left:0;border-top:0;border-radius:0 0 6px 0}
+.me figcaption{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--mint-2);margin:22px 0 0;max-width:300px}
+@media (max-width:899px){.contact-grid{grid-template-columns:1fr;gap:28px}.contact-grid .contact-in{grid-row:2}.me{grid-column:1;grid-row:1;margin:0;display:flex;align-items:center;gap:18px}.ph{width:112px;flex:none}.me img{width:112px}.ph::before{top:-8px;left:-8px}.ph::after{bottom:-8px;right:-8px}.me figcaption{margin:0}}
 .contact .lead{color:var(--on-2)}
 .contact .other{font-size:18px;line-height:1.55;color:var(--on-2);max-width:40em;margin:26px 0 30px}
 .contact .other b{color:var(--on)}
@@ -408,7 +418,6 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
       <li><h3>Wholesale and distribution</h3></li>
       <li><h3>Commercial cleaning</h3></li>
     </ol>
-    <p class="sign">You work with me, Cameron, start to finish.</p>
   </div>
 
   <div class="tp" id="p2">
@@ -457,6 +466,8 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
 
 <section class="dk grid-bg contact" id="contact" aria-labelledby="h-contact">
   <div class="wrap">
+  <div class="contact-grid">
+    <figure class="me" data-rv style="--d:.12s"><span class="ph"><img src="cameron.webp" width="600" height="600" loading="lazy" alt="Cameron Kratky, who runs SEAK Solutions"></span><figcaption>You work with me, Cameron, start to finish.</figcaption></figure>
     <div class="contact-in">
       <span class="idx" style="color:var(--mint)" data-rv>Start here</span>
       <h2 id="h-contact" data-rv>Get in touch</h2>
@@ -468,6 +479,7 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
         <div><dt>Phone</dt><dd><a href="tel:+13142669752">(314) 266-9752</a></dd></div>
       </dl>
     </div>
+  </div>
     <footer class="foot">
       <p><span>SEAK Solutions, LLC &middot; Missouri</span><span aria-hidden="true">&middot;</span><a href="mailto:cameron@seakinteriors.com">cameron@seakinteriors.com</a><span aria-hidden="true">&middot;</span><a href="tel:+13142669752">(314) 266-9752</a></p>
     </footer>
