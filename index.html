@@ -155,7 +155,7 @@ html.js .count:not(.after) td.now{opacity:0}
 .bar{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line);background:#FBFAF7}
 .bar i{width:10px;height:10px;border-radius:50%;background:#DCD8CF}
 .bar span{margin-left:10px;font-size:16px;color:var(--ink-2)}
-.frame img{width:100%;height:auto;aspect-ratio:1640/732;object-fit:cover;object-position:0 0}
+.frame img{width:100%;height:auto;aspect-ratio:1640/902;object-fit:cover;object-position:0 0}
 .shot figcaption{font-size:16px;color:var(--ink-2);margin:16px 2px 0}
 
 /* tabs (his 11/8 ask; radio buttons, no script needed) */
@@ -276,7 +276,7 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
   .steps::before{left:8px;right:auto;top:10px;bottom:10px;width:2px;height:auto;transform-origin:top;animation-name:lineV}
   .steps li::before{left:-33px;top:22px}
   .steps li:nth-child(4)::before{left:-37px;top:20px}
-  .frame img{aspect-ratio:1000/618}
+  .frame img{aspect-ratio:1000/930}
   .count{padding:18px 16px 10px}
   .tally td{font-size:20px}
   .card .big{font-size:54px}
@@ -365,10 +365,11 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
       <h2 id="h-demo">See it working</h2>
     </div>
     <div data-rv style="--d:.1s">
-      <p>A working demo of an AI automation workflow I built for a sample property company. It runs vendor onboarding and purchasing: drafts paperwork, tracks who's waiting on whom, and checks spend against budget, and never sends, signs, or pays without a person. It's built to cut the repeat work that costs a team time and money.</p>
+      <p>A working demo I built on sample records. When a property company takes on a new owner client, the system catches paperwork that doesn't match, like a county record that still shows the seller, and drafts the fix. Nothing changes until a person clicks Approve, and the log keeps who decided and when.</p>
       <div class="demo-links">
+        <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/#tab=approve">Approve a fix and watch it land <span class="arr" aria-hidden="true">&rarr;</span></a>
         <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/video/">Watch the 3&frac12;-minute walkthrough <span class="arr" aria-hidden="true">&rarr;</span></a>
-        <a class="link" href="https://cameronkratkyy.github.io/palmquay-ops-demo/dashboard/">Open the working demo <span class="arr" aria-hidden="true">&rarr;</span></a>
+        <!-- CLIP SLOT: the 60-90 s clip of this tab isn't recorded yet (talk track: business/workflow-fix/approve-tab-talk-track-2026-11-20.md). Once it's live, add "Watch the 90-second clip" here as the second link, after a brief + checker. -->
       </div>
     </div>
   </div>
@@ -376,7 +377,7 @@ html.rv-on [data-rv].in{opacity:1;transform:none}
     <div class="panel">
       <div class="frame">
         <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Working demo</span></div>
-        <picture><source media="(max-width:640px)" srcset="demo-phone.webp" width="1000" height="618"><img src="demo.webp" width="1640" height="732" loading="lazy" alt="The working demo dashboard: vendors and their status, who is waiting on a decision, spend against budget, and nothing sent, signed, or paid without a person."></picture>
+        <picture><source media="(max-width:640px)" srcset="approve-phone.webp" width="1000" height="930"><img src="approve.webp" width="1640" height="902" loading="lazy" alt="The working demo's Approve tab: a new owner's paperwork that doesn't match, shown side by side with a drafted fix and an Approve button, next to a sample software record that updated after the broker approved."></picture>
       </div>
     </div>
     <figcaption>Working demo with sample records.</figcaption>
